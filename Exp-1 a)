@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+     <title>Working of lists</title>
+ </head>
+ <body>
+    <h1>HTML Lists Demonstration</h1>
+     <h2>Ordered list</h2>
+     <h3>Courses</h3>
+     <ol>
+         <li>full stack</li>
+         <li>Advance data structure</li>
+         <li>Probability</li>
+         <li>Software engineering</li>
+         <li>Operating systems</li>
+         <li>Economics</li>
+         <li>Design thinking</li>
+     </ol>
+     <h2>UnOrdered list</h2>
+     <h3>Labs</h3>
+     <ul>
+         <li>OS lab</li>
+         <li>ADSAA lab</li>
+         <li>FSD lab</li>
+     </ul>
+     <h2>Nested lists</h2>
+     <h3>courses with labs</h3>
+     <ol>
+         <li>full stack</li>
+         <ul>
+             <li>FSD lab</li>
+         </ul>
+         <li>Advance data structures</li>
+         <ul>
+             <li>ADSAA lab</li>
+         </ul>
+         <li>Operating system</li>
+         <ul>
+             <li>OS lab</li>
+         </ul>
+     </ol>
+     <h2>A Description List</h2>
+      <dl>
+        <dt>Education</dt>
+         <dd>- The act of teaching and recieving knowledge</dd>
+        <dt>B.Tech</dt>
+        <dd>- Bachelor of Technology</dd>
+      </dl>
+ </body>
+ </html>
