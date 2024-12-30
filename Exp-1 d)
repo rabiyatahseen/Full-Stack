@@ -1,0 +1,61 @@
+#1d)
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+            padding: 20px;
+        }
+        .gallery a {
+            text-decoration: none;
+            border: 2px solid transparent;
+            transition: border-color 0.3s;
+        }
+        .gallery a:hover {
+            border-color: #007BFF;
+        }
+        .gallery img {
+            height: 100px;
+            width: 100px;
+            object-fit: cover;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Image Gallery</h1>
+    <p>Click on any image to view the full-size version.</p>
+    <div class="gallery">
+        <a href="images/fullsize1.jpg" target="_blank">
+            <img src="images/thumbnail1.jpg" alt="Image 1">
+        </a>
+        <a href="images/fullsize2.jpg" target="_blank">
+            <img src="images/thumbnail2.jpg" alt="Image 2">
+        </a>
+        <a href="images/fullsize3.jpg" target="_blank">
+            <img src="images/thumbnail3.jpg" alt="Image 3">
+        </a>
+        <a href="images/fullsize4.jpg" target="_blank">
+            <img src="images/thumbnail4.jpg" alt="Image 4">
+        </a>
+        <a href="images/fullsize5.jpg" target="_blank">
+            <img src="images/thumbnail5.jpg" alt="Image 5">
+        </a>
+    </div>
+</body>
+</html>
