@@ -124,3 +124,169 @@
 </body>
 </html>
 
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form{
+            height: 500px;
+            width: 500px;
+        }
+    
+    </style>
+</head>
+<body>
+    <center>
+        <div class="reg">
+            <h1>Registration Form</h1>
+            <h3>Fill Your Details</h3>
+        </div>
+        <div>
+            <form action="">
+                <table border=1>
+                    <tr>
+                        <label for="fullname"><th>Full Name:</th></label>
+                        <td><input type="text" name="username" placeholder="enter your name"></td>
+                    </tr>
+                    <tr>
+                        <label for="password"><th>Password:</th></label>
+                        <td><input type="text" placeholder="enter your password"></td>
+                    </tr>
+                    <tr>
+                        <label for="age"><th>Age:</th></label>
+                        <th><input type="number"></th>
+                    </tr>
+                    <tr>
+                        <label for="date of birth"><th>Date Of Birth:</th></label>
+                        <td><input type="date"></td>
+                    </tr>
+                    <tr>
+                        <label for="gender"><th>Gender:</th></label>
+                        <td><input type="radio" name="gender" value="Male">Male
+                            <input type="radio" name="gender" value="Female">Female
+                            <input type="radio" name="gender" value="Other">Other<!DOCTYPE html>
+                            <html lang="en">
+                            <head>
+                                <meta charset="UTF-8">
+                                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                                <title>Document</title>
+                                <style>
+                                    form{
+                                        height: 500px;
+                                        width: 500px;
+                                    }
+                                
+                                </style>
+                            </head>
+                            <body>
+                                <center>
+                                    <div class="reg">
+                                        <h1>Registration Form</h1>
+                                        <h3>Fill Your Details</h3>
+                                    </div>
+                                    <div>
+                                        <form action="">
+                                            <table border=1>
+                                                <tr>
+                                                    <label for="fullname"><th>Full Name:</th></label>
+                                                    <td><input type="text" name="username" placeholder="enter your name"></td>
+                                                </tr>
+                                                <tr>
+                                                    <label for="password"><th>Password:</th></label>
+                                                    <td><input type="text" placeholder="enter your password"></td>
+                                                </tr>
+                                                <tr>
+                                                    <label for="age"><th>Age:</th></label>
+                                                    <th><input type="number"></th>
+                                                </tr>
+                                                <tr>
+                                                    <label for="date of birth"><th>Date Of Birth:</th></label>
+                                                    <td><input type="date"></td>
+                                                </tr>
+                                                <tr>
+                                                    <label for="gender"><th>Gender:</th></label>
+                                                    <td><input type="radio" name="gender" value="Male">Male
+                                                        <input type="radio" name="gender" value="Female">Female
+                                                        <input type="radio" name="gender" value="Other">Other
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <label for="hobbies"><th>Hobbies:</th></label>
+                                                    <td><input type="checkbox">Reading<br>
+                                                        <input type="checkbox">Sports<br>
+                                                        <input type="checkbox">Travelling
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <label for="Country"><th>Country:</th></label>
+                                                    <td>
+                                                        <select>
+                                                            <option value="india">India</option>
+                                                            <option value="london">London</option>
+                                                            <option value="america">America</option>
+                                                            <option value="australia">Australia</option>
+                                                            <option value="europe">Europe</option>
+                                                        </select>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <label for="about yourself"><th>About Yourself:</th></label>
+                                                    <td>
+                                                        <textarea rows="5">
+                                                            tell about yourself...
+                                                        </textarea>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                            <button>submit</button>
+                                            <button>reset</button>
+                                        </form>
+                                    </div>
+                                </center>
+                            </body>
+                            </html>
+                        </td>
+                    </tr>
+                    <tr>
+                        <label for="hobbies"><th>Hobbies:</th></label>
+                        <td><input type="checkbox">Reading<br>
+                            <input type="checkbox">Sports<br>
+                            <input type="checkbox">Travelling
+                        </td>
+                    </tr>
+                    <tr>
+                        <label for="Country"><th>Country:</th></label>
+                        <td>
+                            <select>
+                                <option value="india">India</option>
+                                <option value="london">London</option>
+                                <option value="america">America</option>
+                                <option value="australia">Australia</option>
+                                <option value="europe">Europe</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <label for="about yourself"><th>About Yourself:</th></label>
+                        <td>
+                            <textarea rows="5">
+                                tell about yourself...
+                            </textarea>
+                        </td>
+                    </tr>
+                </table>
+                <button>submit</button>
+                <button>reset</button>
+            </form>
+        </div>
+    </center>
+</body>
+</html>
