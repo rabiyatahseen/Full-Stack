@@ -3,216 +3,124 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Images with Links</title>
+    <title>Registration Form</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            margin: 20px;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 50%;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
             text-align: center;
         }
-        h1 {
-            color: #333;
+        table {
+            width: 100%;
+            margin-bottom: 20px;
         }
-        .profile {
-            display: inline-block;
-            margin: 20px;
+        td {
+            padding: 10px;
         }
-        img {
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            border: 2px solid #007BFF;
+        input, select, textarea {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
         }
-        a {
-            text-decoration: none;
-            color: #007BFF;
+        input[type="radio"], input[type="checkbox"] {
+            width: auto;
         }
-        a:hover {
-            text-decoration: underline;
+        button {
+            padding: 10px 20px;
+            margin: 10px 5px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 5px;
+        }
+        button[type="reset"] {
+            background-color: #f44336;
+        }
+        button:hover {
+            opacity: 0.8;
         }
     </style>
 </head>
 <body>
-    <h1>Profile Links</h1>
 
-    <div class="profile">
-        <a href="https://yourprofile.example.com" target="_blank">
-            <img src="your-image.jpg" alt="Your Image">
-        </a>
-        <p><a href="https://yourprofile.example.com" target="_blank">Your Profile</a></p>
-    </div>
-
-    <div class="profile">
-        <a href="https://friendprofile.example.com" target="_blank">
-            <img src="friend-image.jpg" alt="Friend's Image">
-        </a>
-        <p><a href="https://friendprofile.example.com" target="_blank">Friend's Profile</a></p>
-    </div>
-
-</body>
-</html>
-
-
-
-<!DOCTYPE html>
-<html>
-<head>
-<title>Image Gallery</title>
-<style>
-  .gallery {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
-  .gallery img {
-    margin: 5px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    width: 100px;
-    height: 100px;
-    object-fit: cover;
-  }
-</style>
-</head>
-<body>
-
-<h1>Image Gallery</h1>
-
-<div class="gallery">
-  <a href="images/image1.jpg"><img src="images/image1.jpg" alt="Image 1"></a>
-  <a href="images/image2.jpg"><img src="images/image2.jpg" alt="Image 2"></a>
-  <a href="images/image3.jpg"><img src="images/image3.jpg" alt="Image 3"></a>
-  <a href="images/image4.jpg"><img src="images/image4.jpg" alt="Image 4"></a>
-  <a href="images/image5.jpg"><img src="images/image5.jpg" alt="Image 5"></a>
-  </div>
-
-</body>
-</html>
-
-
-
-<!DOCTYPE html>
-<html>
-<head>
-<title>HTML Table Example</title>
-</head>
-<body>
-
-<h1>HTML Table</h1>
-
-<table border="1">
-  <tr>
-    <th>Company</th>
-    <th>Contact</th>
-    <th>Country</th>
-  </tr>
-  <tr>
-    <td>Alfreds Futterkiste</td>
-    <td>Maria Anders</td>
-    <td>Germany</td>
-  </tr>
-  <tr>
-    <td>Berglunds snabbköp</td>
-    <td>Christina Berglund</td>
-    <td>Sweden</td>
-  </tr>
-  <tr>
-    <td>Centro comercial Moctezuma</td>
-    <td>Francisco Chang</td>
-    <td>Mexico</td>
-  </tr>
-</table>
+<div class="container">
+    <h2>Registration Form</h2>
+    <form action="#" method="post">
+        <table>
+            <tr>
+                <td><label for="fullname">Full Name:</label></td>
+                <td><input type="text" id="fullname" name="fullname" required></td>
+            </tr>
+            <tr>
+                <td><label for="password">Password:</label></td>
+                <td><input type="password" id="password" name="password" required></td>
+            </tr>
+            <tr>
+                <td><label for="phone">Phone Number:</label></td>
+                <td><input type="number" id="phone" name="phone" required></td>
+            </tr>
+            <tr>
+                <td><label for="dob">Date of Birth:</label></td>
+                <td><input type="date" id="dob" name="dob" required></td>
+            </tr>
+            <tr>
+                <td><label>Gender:</label></td>
+                <td>
+                    <input type="radio" id="male" name="gender" value="Male">
+                    <label for="male">Male</label>
+                    <input type="radio" id="female" name="gender" value="Female">
+                    <label for="female">Female</label>
+                </td>
+            </tr>
+            <tr>
+                <td><label>Hobbies:</label></td>
+                <td>
+                    <input type="checkbox" id="reading" name="hobbies" value="Reading">
+                    <label for="reading">Reading</label>
+                    <input type="checkbox" id="travelling" name="hobbies" value="Travelling">
+                    <label for="travelling">Travelling</label>
+                    <input type="checkbox" id="sports" name="hobbies" value="Sports">
+                    <label for="sports">Sports</label>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="country">Country:</label></td>
+                <td>
+                    <select id="country" name="country">
+                        <option value="USA">USA</option>
+                        <option value="India">India</option>
+                        <option value="UK">UK</option>
+                        <option value="Canada">Canada</option>
+                        <option value="Australia">Australia</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="address">Address:</label></td>
+                <td><textarea id="address" name="address" rows="4" required></textarea></td>
+            </tr>
+        </table>
+        <div style="text-align: center;">
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+        </div>
+    </form>
+</div>
 
 </body>
 </html>
 
-
-
-<!DOCTYPE html>
-<html>
-<head>
-<title>HTML Timetable</title>
-<style>
-table {
-  border-collapse: collapse;
-  width: 100%;
-}
-
-th, td {
-  border: 1px solid #ddd;
-  padding: 8px;
-  text-align: center;
-}
-
-th {
-  background-color: #f2f2f2;
-}
-</style>
-</head>
-<body>
-
-<h1>Class Timetable</h1>
-
-<caption>**Week 1**</caption>
-
-<table border="1" cellspacing="0" cellpadding="5">
-  <tr>
-    <th rowspan="2">Time</th>
-    <th colspan="5">Day</th>
-  </tr>
-  <tr>
-    <th>Monday</th>
-    <th>Tuesday</th>
-    <th>Wednesday</th>
-    <th>Thursday</th>
-    <th>Friday</th>
-  </tr>
-  <tr>
-    <td>9:00 AM - 9:45 AM</td>
-    <td>Math</td>
-    <td>Science</td>
-    <td>English</td>
-    <td>History</td>
-    <td>Geography</td>
-  </tr>
-  <tr>
-    <td>9:45 AM - 10:30 AM</td>
-    <td>Science</td>
-    <td>Math</td>
-    <td>English</td>
-    <td>History</td>
-    <td>Geography</td>
-  </tr>
-  <tr>
-    <td>10:30 AM - 11:15 AM</td>
-    <td>English</td>
-    <td>Science</td>
-    <td>Math</td>
-    <td>History</td>
-    <td>Geography</td>
-  </tr>
-  <tr>
-    <td>11:15 AM - 12:00 PM</td>
-    <td colspan="5">Lunch</td>
-  </tr>
-  <tr>
-    <td>12:00 PM - 12:45 PM</td>
-    <td>History</td>
-    <td>Geography</td>
-    <td>English</td>
-    <td>Science</td>
-    <td>Math</td>
-  </tr>
-  <tr>
-    <td>12:45 PM - 1:30 PM</td>
-    <td>Geography</td>
-    <td>History</td>
-    <td>English</td>
-    <td>Science</td>
-    <td>Math</td>
-  </tr>
-</table>
-
-</body>
-</html>
